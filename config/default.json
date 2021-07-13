@@ -1,0 +1,4 @@
+{
+  "dbURI": "mongodb://localhost:27017/first",
+  "jwtsecret": "rdqe0ThruEikPX3XbFGflQ"
+}
