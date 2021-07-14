@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react';
+import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Main from './components/Main';
 
 function App() {
   return (
