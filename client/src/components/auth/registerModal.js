@@ -12,7 +12,7 @@ import {
   Alert
 } from 'reactstrap';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-rypes';
+import PropTypes from 'prop-types';
 import { register } from '../../actions/authActions';
 import { clearErrors } from '../../actions/errorActions';
 
@@ -65,13 +65,12 @@ class RegisterModal extends Component {
   }
 
   onSubmit = (e) => {
-    e.prevetDefault();
+    e.preventDefault();
 
     const { name, email, password } = this.state;
 
     // Create user object
     const newUser = { name, email, password };
-
     // Attempt to register
     this.props.register(newUser);
 

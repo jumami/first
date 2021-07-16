@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Home from './Home';
+import Home1 from './Home1';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -11,7 +12,7 @@ class Main extends Component {
           <Route path='/home'>
             <Home/>
           </Route>
-          <Redirect to='/home'/>
+          <Redirect to="/home"/>
         </Switch>
       </div>
     )
