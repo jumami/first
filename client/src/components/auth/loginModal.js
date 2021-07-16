@@ -15,7 +15,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/authActions';
 import { clearErrors } from '../../actions/errorActions';
-import { LOGIN_FAIL } from "../../actions/types";
 
 class LoginModal extends Component {
   state = {

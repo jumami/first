@@ -29,7 +29,6 @@ export const register = ({name, email, password}) => dispath => {
 
   //register body
   const body = JSON.stringify({name, email, password});
-
   axios.post('/api/register', body, config )
     .then(res => dispath({
       type: REGISTER_SUCCESS,
@@ -82,7 +81,7 @@ export const tokenConfig = getState => {
   // Headers
   const config = {
     headers: {
-      'Content-Type': 'application/json'
+      'Content-type': 'application/json'
     }
   }
 
